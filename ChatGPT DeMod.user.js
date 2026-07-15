@@ -126,7 +126,7 @@ var demod_init = async function() {
                 fetch_url = fetch_url.url;
                 is_request = true;
             }
-            if( fetch_url.indexOf('/moderation') != -1 ) {
+            if( fetch_url.includes('/moderation') ) {
                 if( is_on ) {
                     intercept_count_total ++;
                     var request_body = "";
@@ -201,7 +201,7 @@ var demod_init = async function() {
         // Bonus functionality: blocking tracking calls
         XMLHttpRequest.prototype.realOpen = XMLHttpRequest.prototype.open;
         XMLHttpRequest.prototype.open = function(method, url, async, user, password) {
-            if( is_on && url.indexOf("/track/?") != -1 ) return;
+            if( is_on && url.includes("/track/?") ) return;
             this.realOpen (method, url, async, user, password);
         }
 
