@@ -13,7 +13,7 @@
 
 'use strict';
 
-var demod_init = async function() {
+const demod_init = async function() {
     'use strict';
 
     function main () {
