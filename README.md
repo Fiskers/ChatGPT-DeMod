@@ -1,5 +1,12 @@
 
 # ChatGPT-DeMod
+
+> [!CAUTION]
+> **Legacy, unsupported userscript.** This script targets an older ChatGPT domain and modifies page-wide `fetch` and `XMLHttpRequest` behavior to interfere with moderation and tracking requests. It may no longer work, may break account or page behavior, and may conflict with current service rules. Review the complete source and metadata before installation. Do not use it with sensitive conversations, credentials, or accounts you cannot risk.
+
+> [!WARNING]
+> The userscript's `@downloadURL` and `@updateURL` point to the upstream repository, not this fork. An automatic update can therefore replace fork-specific changes with upstream code.
+
 This userscript for Tampermonkey and Greasemonkey allows you to disable moderation checks during conversations with ChatGPT, i.e. it will prevent "This content might violate our content policy" warnings from being triggered.
 
 # Installation
