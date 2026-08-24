@@ -9,6 +9,10 @@
 
 This userscript for Tampermonkey and Greasemonkey allows you to disable moderation checks during conversations with ChatGPT, i.e. it will prevent "This content might violate our content policy" warnings from being triggered.
 
+## Bundled conversation data
+
+The repository includes a large `conversations.json` file used as a source of replacement conversation text. Its provenance, redistribution terms, and full privacy review are not documented in this fork. Before redistributing or extending the dataset, verify its source and license and scan the complete file for personal data, credentials, tokens, or other sensitive content.
+
 # Installation
 First of all you will have to install [Tampermonkey](https://www.tampermonkey.net) plugin for your browser on PC (if you're on a mobile then Kiwi browser for Android and Userscripts for Safari on iOS will work just as well). Then you'll have to install the userscript, which can be done in multiple ways, but the easiest is probably to just open the *ChatGPT DeMod.user.js* file in the raw view and Tampermonkey should detect it and open the installation page. If not, copy the contents of the file, and then in Tampermonkey's options click the **+** tab to create a new script. Paste the copied contents into it and save it.
 Make sure the script is enabled by navigating the **Installed Userscripts** tab.
