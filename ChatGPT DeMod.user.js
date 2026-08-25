@@ -158,8 +158,8 @@ const demod_init = async function() {
                     }
                     else {
                         var intercepted = false;
-                        for(var j = 0; j<body.messages.length; j++) {
-                            var msg = body.messages[j];
+                        for(let j = 0; j<body.messages.length; j++) {
+                            const msg = body.messages[j];
                             if( msg.content.content_type == "text" ) {
                                 msg.content.parts = [current_message.output];
                                 intercepted = true;
